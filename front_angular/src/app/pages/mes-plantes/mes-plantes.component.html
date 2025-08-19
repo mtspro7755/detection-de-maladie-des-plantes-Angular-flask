@@ -1,0 +1,54 @@
+<div class="dashboard-container">
+  <h1> Mes plantes</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="plant-grid">
+  <div *ngFor="let plant of plants" class="plant-card">
+
+    <!-- Badge de statut -->
+    <span class="plant-badge" [ngClass]="plant.status">
+      {{ plant.status | titlecase }} ({{ plant.statusPercentage }}%)
+    </span>
+
+    <!-- Image ou nom comme visuel -->
+    <div class="plant-image" *ngIf="plant.imageUrl; else nameVisual">
+      <img [src]="plant.imageUrl" [alt]="plant.name" />
+    </div>
+    <ng-template #nameVisual>
+      <div class="plant-name-visual">{{ plant.name }}</div>
+    </ng-template>
+
+    <!-- Infos -->
+    <div class="plant-details">
+      <h3>{{ plant.name }}</h3>
+      <p class="plant-family">{{ plant.family }}</p>
+      <p class="plant-meta">
+        <i class="fas fa-calendar-alt"></i> Dernière analyse: {{ plant.lastAnalysis }}
+      </p>
+      <p>{{ plant.analysisCount }} analyses</p>
+
+      <div class="plant-actions">
+        <button class="plant-btn edit-btn">
+          <i class="fas fa-edit"></i> Modifier
+        </button>
+
+        <button class="plant-btn delete-btn">
+          <i class="fas fa-trash-alt"></i> Supprimer
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

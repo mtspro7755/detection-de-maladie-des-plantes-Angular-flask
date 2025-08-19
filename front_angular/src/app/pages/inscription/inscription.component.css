@@ -1,0 +1,163 @@
+/* Container principal centré */
+.container {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  min-height: 100vh;
+}
+
+/* Carte du formulaire */
+.form-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 440px;
+  text-align: left;
+}
+
+/* Titre principal */
+h2 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+/* Texte d'accroche */
+p.text-muted {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Boutons d'onglet (inscription / connexion) */
+.toggle-buttons {
+  display: flex;
+  background-color: #edf8ed;
+  border-radius: var(--border-radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #4d4d4d;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-buttons button.active {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--green);
+}
+
+/* Champs du formulaire */
+.form-group {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+/*input {
+  width: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}*/
+
+input {
+  width: 100%;
+  max-width: 380px; /* ✅ change cette valeur selon le rendu souhaité */
+  margin: 0 auto;    /* ✅ centre horizontalement */
+  display: block;    /* ✅ nécessaire pour centrer */
+  border: 1px solid #dcdcdc;
+  transition: border-color 0.3s;
+  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  font-size: 1rem;
+}
+
+.confidentialite{
+  color: #2d8233;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+/* Icône à l’intérieur des champs */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  color: #7c7c7c;
+  font-size: 1rem;
+}
+
+/* Bouton principal */
+.submit-btn {
+  background-color: #2d8233;
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.75rem;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+/*
+.submit-btn:hover {
+  background-color: #2d8233;
+}
+*/
+
+/* Politique de confidentialité */
+.policy {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1.25rem;
+  color: #666;
+}
+
+
+.policy a {
+  color: #2d8233;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+.policy a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  input {
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}

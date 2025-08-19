@@ -1,0 +1,38 @@
+<div class="analyseur-container">
+  <h2 class="title">
+    <i class="fa fa-camera"></i> Analyser une plante
+  </h2>
+
+  <div class="upload-zone" (click)="openFileDialog(fileInput)">
+    <i class="fa fa-upload upload-icon"></i>
+    <p class="upload-text">Téléchargez une photo de votre plante</p>
+    <p class="upload-subtext">Formats acceptés: JPG, PNG (max 10MB)</p>
+    <button class="upload-button">
+      <i class="fa fa-camera"></i> Choisir une photo
+    </button>
+    <div *ngIf="loading" class="loading">Analyse en cours...</div>
+    <div *ngIf="!loading && predictionResult && imageUrl" class="result-container">
+      <img [src]="imageUrl" alt="Image analysée" class="preview-image" />
+      <div class="prediction">
+        <h3>Resultat du Diagnostic</h3>
+        <p>{{ predictionResult }}</p>
+      </div>
+
+     <div *ngIf="maladieExtraite() as maladie">
+        <h3>Recommandations :</h3>
+        <p>{{ recommandations[maladie] || 'Aucune recommandation disponible.' }}</p>
+     </div>
+
+
+
+    </div>
+
+    <input
+      type="file"
+      accept=".jpg, .jpeg, .png"
+      #fileInput
+      (change)="onFileSelected($event)"
+      hidden
+    />
+  </div>
+</div>

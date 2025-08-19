@@ -1,0 +1,100 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  color: #228b22;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.brand-subtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: -4px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  font-size: 0.98rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar-center a:hover {
+  background-color: #f1fdf1;
+  color: #228b22;
+}
+
+.navbar-center a.active {
+  background-color: #e6fae6;
+  color: #228b22;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  border: 1.5px solid #228b22;
+  background: #ffffff;
+  color: #228b22;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+  background-color: #e6fae6;
+}
+
+.navbar-left i{
+  background: #c7eccf;
+  padding: 10px;
+  border-radius: 50%;
+  color: #228b22;
+  font-weight: 700;
+}
+

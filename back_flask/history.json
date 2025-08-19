@@ -1,0 +1,42 @@
+[
+    {
+        "plant_name": "Tomate0",
+        "analysis_count": 1,
+        "confidence": 0.9743368029594421,
+        "disease_name": "Tomate : Target_Spot",
+        "image_url": "http://localhost:5000/uploads/Tomate0.JPG",
+        "date": "2025-07-21"
+    },
+    {
+        "plant_name": "Tomate1",
+        "analysis_count": 1,
+        "confidence": 0.7815110087394714,
+        "disease_name": "Tomate : Septoria_leaf_spot",
+        "image_url": "http://localhost:5000/uploads/Tomate1.JPG",
+        "date": "2025-07-21"
+    },
+    {
+        "plant_name": "Tomate2",
+        "analysis_count": 4,
+        "confidence": 0.4999876022338867,
+        "disease_name": "Tomate : Septoria_leaf_spot",
+        "image_url": "http://localhost:5000/uploads/Tomate2.JPG",
+        "date": "2025-07-23"
+    },
+    {
+        "plant_name": "Tomate6",
+        "analysis_count": 1,
+        "confidence": 0.996044397354126,
+        "disease_name": "Tomate : Target_Spot",
+        "image_url": "http://localhost:5000/uploads/Tomate6.JPG",
+        "date": "2025-07-23"
+    },
+    {
+        "plant_name": "Tomate7",
+        "analysis_count": 1,
+        "confidence": 0.9424828290939331,
+        "disease_name": "Tomate : Target_Spot",
+        "image_url": "http://localhost:5000/uploads/Tomate7.JPG",
+        "date": "2025-07-23"
+    }
+]

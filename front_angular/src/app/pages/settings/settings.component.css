@@ -1,0 +1,21 @@
+.settings-card {
+  background-color: #f6fdf6;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  color: #2e7d32;
+  margin-bottom: 200px;
+}
+
+.settings-card h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.settings-icon {
+  margin-right: 0.6rem;
+  color: #2e7d32;
+}
